@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">FC_Online</string>
+
+    <string name="test_text">test</string>
+    <string name="test_number">123</string>
+
+    <string name="nickname_info">감독 정보</string>
+    <string name="buy_info">구매 기록</string>
+    <string name="sell_info">판매 기록</string>
+    <string name="play_info">경기 기록</string>
+    <string name="search">검색</string>
+    <string name="nickname_input">감독명 입력하기</string>
+    <string name="buy_record">구매기록</string>
+    <string name="sell_record">판매기록</string>
+    <string name="play_record">경기기록</string>
+
+    <string name="trade_spid">선수명</string>
+    <string name="trade_grade">강화등급</string>
+    <string name="trade_value">선수가치</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fail_search_text">존재하지 않는 감독명입니다.\n다시 입력해주세요</string>
+
+    <string-array name="matchPlayType">
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>52</item>
+        <item>60</item>
+        <item>204</item>
+        <item>214</item>
+        <item>224</item>
+        <item>234</item>
+    </string-array>
+
 </resources>
