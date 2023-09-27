@@ -7,7 +7,7 @@ import com.example.fc_online.retrofit.RetrofitClient
 object Constants {
 
     //    const val BASE_URL = "https://api.nexon.co.kr/"
-    const val BASE_URL = "https://public.api.nexon.com/openapi/"
+    const val BASE_URL = "https://public.api.nexon.com/openapi/fconline/v1.0/"
 
     const val KEY = BuildConfig.NEXON_API_KEY
 

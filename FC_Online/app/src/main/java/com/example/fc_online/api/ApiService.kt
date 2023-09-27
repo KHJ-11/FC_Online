@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET("fconline/v1.0/users?")
+    @GET("users?")
     fun getUserInfo(
         @Header("Authorization") Authorization: String,
         @Query("nickname") nickname: String
