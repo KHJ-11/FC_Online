@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.FailSearch"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="존재하지 않는 감독명입니다."
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/return_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="돌아가기"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

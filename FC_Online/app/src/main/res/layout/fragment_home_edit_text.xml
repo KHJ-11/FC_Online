@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.HomeScreen_01"
-    android:orientation="vertical">
+    tools:context=".ui.fragment.HomeEditText"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
 
     <EditText
         android:id="@+id/homeEditText"
@@ -14,6 +15,8 @@
     <Button
         android:id="@+id/homeButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="검색"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

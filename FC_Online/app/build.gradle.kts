@@ -1,3 +1,5 @@
+import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -5,16 +7,18 @@ plugins {
 
 android {
     namespace = "com.example.fc_online"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.fc_online"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String","NEXON_API_KEY", getApikey("nexon_api_key"))
     }
 
     buildTypes {
@@ -36,7 +40,12 @@ android {
 
     buildFeatures {
         viewBinding = true // viewBinding
+        buildConfig = true // buildConfig
     }
+}
+
+fun getApikey(propertyKey: String): String {
+    return gradleLocalProperties(rootDir).getProperty(propertyKey)
 }
 
 dependencies {

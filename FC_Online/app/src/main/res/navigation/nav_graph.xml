@@ -3,20 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeScreen_01">
+    app:startDestination="@id/homeEditText">
 
     <fragment
-        android:id="@+id/homeScreen_01"
-        android:name="com.example.fc_online.ui.fragment.HomeScreen_01"
-        android:label="fragment_home_screen_01"
-        tools:layout="@layout/fragment_home_screen_01" >
+        android:id="@+id/homeEditText"
+        android:name="com.example.fc_online.ui.fragment.HomeEditText"
+        android:label="fragment_home_edit_text"
+        tools:layout="@layout/fragment_home_edit_text" >
         <action
-            android:id="@+id/action_homeScreen_01_to_userInfo_02"
-            app:destination="@id/userInfo_02" />
+            android:id="@+id/action_homeEditText_to_userInfoText"
+            app:destination="@id/userInfoText" />
+        <action
+            android:id="@+id/action_homeEditText_to_failSearch"
+            app:destination="@id/failSearch" />
     </fragment>
     <fragment
-        android:id="@+id/userInfo_02"
-        android:name="com.example.fc_online.ui.fragment.UserInfo_02"
-        android:label="fragment_user_info_02"
-        tools:layout="@layout/fragment_user_info_02" />
+        android:id="@+id/userInfoText"
+        android:name="com.example.fc_online.ui.fragment.UserInfoText"
+        android:label="fragment_user_info_text"
+        tools:layout="@layout/fragment_user_info_text" />
+    <fragment
+        android:id="@+id/failSearch"
+        android:name="com.example.fc_online.ui.fragment.FailSearch"
+        android:label="fragment_fail_search"
+        tools:layout="@layout/fragment_fail_search" >
+        <action
+            android:id="@+id/action_failSearch_to_homeEditText"
+            app:destination="@id/homeEditText" />
+    </fragment>
 </navigation>
