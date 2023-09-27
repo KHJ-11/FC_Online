@@ -6,14 +6,24 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.fc_online.R
+import com.example.fc_online.databinding.FragmentUserInfoTextBinding
 
 class UserInfoText : Fragment() {
+    private lateinit var binding: FragmentUserInfoTextBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_info_text, container, false)
+        savedInstanceState: Bundle?): View? {
+        binding = FragmentUserInfoTextBinding.inflate(layoutInflater)
+        val view = binding.root
+
+        userInfoText()
+
+        return view
+    }
+
+    private fun userInfoText() {
+        binding.userTextName.text = arguments?.getString("nickname")
+        binding.userTextLevel.text = "Lv ${arguments?.getInt("level")}"
     }
 
 }
