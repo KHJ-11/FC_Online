@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tr_menu_buy"
+        android:title="구매"/>
+
+    <item
+        android:id="@+id/tr_menu_sell"
+        android:title="판매"/>
+
+    <item
+        android:id="@+id/tr_menu_maxBuy"
+        android:title="최고구매"/>
+
+    <item
+        android:id="@+id/tr_menu_manSell"
+        android:title="최고판매"/>
+
+</menu>

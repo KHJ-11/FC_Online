@@ -21,7 +21,11 @@
         android:id="@+id/userInfoText"
         android:name="com.example.fc_online.ui.fragment.UserInfoText"
         android:label="fragment_user_info_text"
-        tools:layout="@layout/fragment_user_info_text" />
+        tools:layout="@layout/fragment_user_info_text" >
+        <action
+            android:id="@+id/action_userInfoText_to_tradeRecord"
+            app:destination="@id/tradeRecord" />
+    </fragment>
     <fragment
         android:id="@+id/failSearch"
         android:name="com.example.fc_online.ui.fragment.FailSearch"
@@ -31,4 +35,9 @@
             android:id="@+id/action_failSearch_to_homeEditText"
             app:destination="@id/homeEditText" />
     </fragment>
+    <fragment
+        android:id="@+id/tradeRecord"
+        android:name="com.example.fc_online.ui.fragment.TradeRecord"
+        android:label="fragment_trade_record"
+        tools:layout="@layout/fragment_trade_record" />
 </navigation>
