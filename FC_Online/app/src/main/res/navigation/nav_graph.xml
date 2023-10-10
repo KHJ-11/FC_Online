@@ -39,5 +39,38 @@
         android:id="@+id/tradeRecord"
         android:name="com.example.fc_online.ui.fragment.TradeRecord"
         android:label="fragment_trade_record"
-        tools:layout="@layout/fragment_trade_record" />
+        tools:layout="@layout/fragment_trade_record" >
+        <action
+            android:id="@+id/action_tradeRecord_to_tradeRecordBuy"
+            app:destination="@id/tradeRecordBuy" />
+        <action
+            android:id="@+id/action_tradeRecord_to_tradeRecordSell"
+            app:destination="@id/tradeRecordSell" />
+        <action
+            android:id="@+id/action_tradeRecord_to_tradeRecordMax"
+            app:destination="@id/tradeRecordMax" />
+        <action
+            android:id="@+id/action_tradeRecord_to_tradeRecordMin"
+            app:destination="@id/tradeRecordMin" />
+    </fragment>
+    <fragment
+        android:id="@+id/tradeRecordBuy"
+        android:name="com.example.fc_online.ui.fragment.TradeRecordBuy"
+        android:label="fragment_trade_record_buy"
+        tools:layout="@layout/fragment_trade_record_buy" />
+    <fragment
+        android:id="@+id/tradeRecordSell"
+        android:name="com.example.fc_online.ui.fragment.TradeRecordSell"
+        android:label="fragment_trade_record_sell"
+        tools:layout="@layout/fragment_trade_record_sell" />
+    <fragment
+        android:id="@+id/tradeRecordMax"
+        android:name="com.example.fc_online.ui.fragment.TradeRecordMax"
+        android:label="fragment_trade_record_max"
+        tools:layout="@layout/fragment_trade_record_max" />
+    <fragment
+        android:id="@+id/tradeRecordMin"
+        android:name="com.example.fc_online.ui.fragment.TradeRecordMin"
+        android:label="fragment_trade_record_min"
+        tools:layout="@layout/fragment_trade_record_min" />
 </navigation>
