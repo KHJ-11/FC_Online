@@ -21,9 +21,16 @@ class TradeRecord : Fragment() {
         binding = FragmentTradeRecordBinding.inflate(layoutInflater)
         val view = binding.root
 
-
+        bottomNavigationBar()
 
         return view
+    }
+
+    private fun bottomNavigationBar() {
+        val navHostFragment = childFragmentManager.findFragmentById(R.id.tr_navContainer) as NavHostFragment
+        val navController = navHostFragment.navController
+        binding.menuNavigationTr.setupWithNavController(navHostFragment.navController)
+        binding.menuNavigationTr.selectedItemId = R.id.tradeRecordBuy
     }
 
 }
