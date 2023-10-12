@@ -66,4 +66,7 @@ dependencies {
 
     // viewPager
     implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+    // glide
+    implementation("com.github.bumptech.glide:glide:4.12.0")
 }
