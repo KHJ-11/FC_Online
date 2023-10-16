@@ -7,23 +7,33 @@
     android:orientation="vertical"
     android:layout_margin="20dp">
 
-    <TextView
-        android:id="@+id/userTextName"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <TextView
-        android:id="@+id/userTextLevel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"/>
+        <TextView
+            android:id="@+id/userTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"/>
 
-    <Button
-        android:id="@+id/tradeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="거래기록"
-        android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/userTextLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/userTextAccessid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
 
 </LinearLayout>

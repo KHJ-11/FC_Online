@@ -1,11 +1,13 @@
 package com.example.fc_online.ui.fragment
 
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import com.example.fc_online.R
@@ -44,7 +46,8 @@ class HomeEditText : Fragment() {
                 val user = response.body()
 
                 if (binding.homeEditText.text.toString() != user?.nickname) {
-                    Navigation.findNavController(binding.root).navigate(R.id.action_homeEditText_to_failSearch)
+                    binding.homeFailText.text = "존재하지 않는 감독명입니다."
+                    binding.homeFailText.setTextColor(Color.RED)
                 } else {
                     val bundle = bundleOf(
                         "nickname" to user?.nickname,

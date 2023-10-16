@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragment.TradeRecord"
-    android:orientation="vertical">
+    tools:context=".ui.fragment.TradeRecord">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/menu_navigation_tr"
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:labelVisibilityMode="labeled"
-        app:menu="@menu/trade_record_menu"
-        app:itemIconTint="@color/navigation_item"
-        app:itemTextColor="@color/navigation_item"
-        app:itemBackground="@color/white"/>
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/tr_navContainer"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        app:navGraph="@navigation/nav_graph"/>
-
-</LinearLayout>
+</FrameLayout>
