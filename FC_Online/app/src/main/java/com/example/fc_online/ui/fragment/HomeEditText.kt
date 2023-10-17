@@ -2,15 +2,15 @@ package com.example.fc_online.ui.fragment
 
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
 import com.example.fc_online.R
+import com.example.fc_online.util.SharedViewModel
 import com.example.fc_online.data.UserInfo
 import com.example.fc_online.databinding.FragmentHomeEditTextBinding
 import com.example.fc_online.util.Constants.KEY
@@ -21,6 +21,7 @@ import retrofit2.Response
 
 class HomeEditText : Fragment() {
     private lateinit var binding: FragmentHomeEditTextBinding
+    private val sharedViewModel: SharedViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
@@ -55,6 +56,8 @@ class HomeEditText : Fragment() {
                         "accessid" to user?.accessId
                     )
                     Navigation.findNavController(binding.root).navigate(R.id.action_homeEditText_to_userInfoText, bundle)
+
+                    sharedViewModel.sharedData = user.accessId
                 }
             }
 

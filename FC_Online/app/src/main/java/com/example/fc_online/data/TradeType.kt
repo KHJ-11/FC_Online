@@ -12,5 +12,5 @@ data class TradeType( // 거래기록
     @SerializedName("grade") // 선수 강화등급
     val grade: Int = 0,
     @SerializedName("value") // 선수 가치(BP)
-    val value: Int = 0
+    val value: Long = 0
 )

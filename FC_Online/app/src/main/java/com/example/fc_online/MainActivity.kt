@@ -30,5 +30,7 @@ class MainActivity : AppCompatActivity() {
                 binding.bottomNav.visibility = View.VISIBLE
             }
         }
+
     }
+
 }
