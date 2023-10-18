@@ -31,7 +31,6 @@ class TradeRecordBuy : Fragment() {
         val view = binding.root
 
         userBuyTrade()
-        Log.e("Awdawd","${sharedViewModel.sharedData}")
 
         return view
     }
