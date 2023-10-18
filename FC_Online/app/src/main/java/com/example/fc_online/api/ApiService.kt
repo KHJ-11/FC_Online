@@ -1,5 +1,6 @@
 package com.example.fc_online.api
 
+import com.example.fc_online.data.SeasonId
 import com.example.fc_online.data.SpidName
 import com.example.fc_online.data.TradeType
 import com.example.fc_online.data.UserInfo
@@ -29,5 +30,9 @@ interface ApiService {
     @GET("https://static.api.nexon.co.kr/fconline/latest/spid.json")
     fun getSpidName(
     ): Call<List<SpidName>>
+
+    @GET("https://static.api.nexon.co.kr/fconline/latest/seasonid.json")
+    fun getSeasonId(
+    ): Call<List<SeasonId>>
 
 }

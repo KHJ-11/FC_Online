@@ -9,7 +9,6 @@
         android:id="@+id/tradePicture"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:background="@drawable/ic_launcher_background"
         android:layout_margin="5dp"/>
 
     <LinearLayout
@@ -28,9 +27,9 @@
 
             <ImageView
                 android:id="@+id/tradeSeason"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:background="@mipmap/ic_launcher_round"/>
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"/>
 
             <TextView
                 android:id="@+id/tradeSpid"
@@ -38,10 +37,10 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="선 수 이 름"
-                android:gravity="center"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                android:layout_marginLeft="5dp"/>
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"/>
 
         </LinearLayout>
 
@@ -60,12 +59,13 @@
 
             <TextView
                 android:id="@+id/tradeGrade"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
                 android:text="3"
+                android:layout_gravity="center"
                 android:gravity="center"
                 android:background="@color/bronze"
-                android:layout_marginRight="20dp"/>
+                android:layout_marginRight="50dp"/>
 
         </LinearLayout>
 
@@ -74,7 +74,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.75"
+        android:layout_weight="1.5"
         android:orientation="vertical"
         android:layout_margin="5dp">
 
@@ -83,9 +83,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="5000억"
-            android:gravity="center"
+            android:gravity="center|end"
             android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textSize="25sp"/>
 
     </LinearLayout>
 
