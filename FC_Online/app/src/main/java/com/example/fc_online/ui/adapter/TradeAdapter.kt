@@ -26,7 +26,9 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
     : RecyclerView.Adapter<TradeAdapter.Tradeholder>() {
 
     val valueKor = arrayOf("","만","억","조","경")
-    val deFormat = DecimalFormat("#,###")
+    val deFormat = DecimalFormat("###,###")
+
+    val unitArray = arrayOf("","만","억","조","경")
 
     inner class Tradeholder(rowRoot: View) : RecyclerView.ViewHolder(rowRoot) {
         val spidItem: TextView = rowRoot.findViewById(R.id.tradeSpid)
@@ -38,8 +40,25 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
         fun setData(item: TradeType) {
             spidItem.text = item.spid.toString()
             gradeItem.text = item.grade.toString()
-//            valueItem.text = item.value.toString()
-//            valueItem.text = deFormat.format(item.value.toString().toLong())
+
+            val number = item.value.toString().toLong()
+            val unitArray = arrayOf("","만","억","조")
+
+            val units = mutableListOf<String>()
+            var remainingNumber = number
+
+            for (unit in unitArray) {
+                val unitValue = remainingNumber % 10000
+                if (unitValue > 0) {
+                    units.add(unitValue.toString() + unit)
+                }
+                remainingNumber /= 10000
+            }
+
+            val koreanRepresentation = units.reversed().joinToString(" ")
+
+            valueItem.text = koreanRepresentation
+
 
             if (item.grade == 1) {
                 gradeItem.setBackgroundResource(R.drawable.back_black)
@@ -120,4 +139,5 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
     override fun getItemCount(): Int {
         return tradeList.size
     }
+
 }
