@@ -25,11 +25,6 @@ import kotlin.time.Duration.Companion.nanoseconds
 class TradeAdapter(private val tradeList:ArrayList<TradeType>)
     : RecyclerView.Adapter<TradeAdapter.Tradeholder>() {
 
-    val valueKor = arrayOf("","만","억","조","경")
-    val deFormat = DecimalFormat("###,###")
-
-    val unitArray = arrayOf("","만","억","조","경")
-
     inner class Tradeholder(rowRoot: View) : RecyclerView.ViewHolder(rowRoot) {
         val spidItem: TextView = rowRoot.findViewById(R.id.tradeSpid)
         val gradeItem: TextView = rowRoot.findViewById(R.id.tradeGrade)
@@ -58,7 +53,6 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
             val koreanRepresentation = units.reversed().joinToString(" ")
 
             valueItem.text = koreanRepresentation
-
 
             if (item.grade == 1) {
                 gradeItem.setBackgroundResource(R.drawable.back_black)

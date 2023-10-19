@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/tradePicture"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_margin="5dp"/>
 
     <LinearLayout
@@ -28,7 +28,7 @@
             <ImageView
                 android:id="@+id/tradeSeason"
                 android:layout_width="30dp"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"/>
 
             <TextView
@@ -74,7 +74,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.2"
+        android:layout_weight="1.5"
         android:orientation="vertical"
         android:layout_margin="5dp">
 
