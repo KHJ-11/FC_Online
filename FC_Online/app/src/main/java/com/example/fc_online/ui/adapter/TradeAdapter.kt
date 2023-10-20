@@ -18,6 +18,7 @@ import org.w3c.dom.Text
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.lang.StringBuilder
 import java.text.DecimalFormat
 import kotlin.math.log
 import kotlin.time.Duration.Companion.nanoseconds
@@ -49,10 +50,24 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
                 }
                 remainingNumber /= 10000
             }
-
             val koreanRepresentation = units.reversed().joinToString(" ")
 
+            val numberStr = number.toString()
+            val reversedFormattedNumber = StringBuilder()
+
+            for (i in numberStr.indices) {
+                if (i > 0 && i % 4 == 0) {
+                    reversedFormattedNumber.append(',')
+                }
+                reversedFormattedNumber.append(numberStr[numberStr.length - 1 - i])
+            }
+            val formatNumberWithComma = reversedFormattedNumber.reverse().toString()
+
             valueItem.text = koreanRepresentation
+
+            Log.e("awdawdwad", koreanRepresentation)
+            Log.e("qweqweqww", formatNumberWithComma)
+
 
             if (item.grade == 1) {
                 gradeItem.setBackgroundResource(R.drawable.back_black)
