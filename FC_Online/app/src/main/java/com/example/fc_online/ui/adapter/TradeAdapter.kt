@@ -52,21 +52,21 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
             }
             val koreanRepresentation = units.reversed().joinToString(" ")
 
-            val numberStr = number.toString()
-            val reversedFormattedNumber = StringBuilder()
-
-            for (i in numberStr.indices) {
-                if (i > 0 && i % 4 == 0) {
-                    reversedFormattedNumber.append(',')
-                }
-                reversedFormattedNumber.append(numberStr[numberStr.length - 1 - i])
-            }
-            val formatNumberWithComma = reversedFormattedNumber.reverse().toString()
+//            val numberStr = number.toString()
+//            val reversedFormattedNumber = StringBuilder()
+//
+//            for (i in numberStr.indices) {
+//                if (i > 0 && i % 4 == 0) {
+//                    reversedFormattedNumber.append(',')
+//                }
+//                reversedFormattedNumber.append(numberStr[numberStr.length - 1 - i])
+//            }
+//            val formatNumberWithComma = reversedFormattedNumber.reverse().toString()
 
             valueItem.text = koreanRepresentation
 
             Log.e("awdawdwad", koreanRepresentation)
-            Log.e("qweqweqww", formatNumberWithComma)
+//            Log.e("qweqweqww", formatNumberWithComma)
 
 
             if (item.grade == 1) {
