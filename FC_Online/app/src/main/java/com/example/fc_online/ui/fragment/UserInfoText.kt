@@ -29,7 +29,7 @@ class UserInfoText : Fragment() {
     private fun userInfoText() {
         binding.userTextName.text = arguments?.getString("nickname")
         binding.userTextLevel.text = "Lv ${arguments?.getInt("level")}"
-        binding.userTextAccessid.text = sharedViewModel.sharedData
+//        binding.userTextAccessid.text = sharedViewModel.sharedData
 
     }
 

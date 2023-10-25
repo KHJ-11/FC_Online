@@ -34,7 +34,7 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
         val spidSeason: ImageView = rowRoot.findViewById(R.id.tradeSeason)
 
         fun setData(item: TradeType) {
-            spidItem.text = item.spid.toString()
+//            spidItem.text = item.spid.toString()
             gradeItem.text = item.grade.toString()
 
             val number = item.value.toString().toLong()
@@ -65,22 +65,22 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
 
             valueItem.text = koreanRepresentation
 
-            Log.e("awdawdwad", koreanRepresentation)
+//            Log.e("awdawdwad", koreanRepresentation)
 //            Log.e("qweqweqww", formatNumberWithComma)
 
 
             if (item.grade == 1) {
                 gradeItem.setBackgroundResource(R.drawable.back_black)
-                gradeItem.setTextColor(Color.WHITE)
+                gradeItem.setTextColor(Color.parseColor("#C3C7C8"))
             } else if (item.grade <= 4) {
                 gradeItem.setBackgroundResource(R.drawable.back_bronze)
-                gradeItem.setTextColor(Color.BLACK)
+                gradeItem.setTextColor(Color.parseColor("#7F3F25"))
             } else if (item.grade <= 7) {
                 gradeItem.setBackgroundResource(R.drawable.back_silver)
-                gradeItem.setTextColor(Color.BLACK)
+                gradeItem.setTextColor(Color.parseColor("#5C6169"))
             } else if (item.grade <= 10) {
                 gradeItem.setBackgroundResource(R.drawable.back_gold)
-                gradeItem.setTextColor(Color.BLACK)
+                gradeItem.setTextColor(Color.parseColor("#6C5200"))
             }
 
             val callGetSpidName = api.getSpidName()
