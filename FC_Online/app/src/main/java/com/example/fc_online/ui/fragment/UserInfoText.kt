@@ -62,7 +62,7 @@ class UserInfoText : Fragment() {
     }
 
     private fun saveData() {
-        val data = "test"
+        val data = arguments?.getString("nickname").toString()
         dataRepository.saveData(data)
     }
 

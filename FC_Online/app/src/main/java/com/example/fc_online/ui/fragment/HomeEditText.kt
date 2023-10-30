@@ -3,6 +3,7 @@ package com.example.fc_online.ui.fragment
 import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -47,11 +48,14 @@ class HomeEditText : Fragment() {
 
         userEditText()
 
-        val mNameAdapter = SaveNameAdapter(nameList)
-        binding.nameGridRecyclerview.apply {
-            adapter = mNameAdapter
-            layoutManager = GridLayoutManager(context,3)
-        }
+        val itemList = ArrayList<SaveName>()
+//        itemList.add(SaveName("123123"))
+//        itemList.add(SaveName("${dataRepository.getData()}"))
+        Log.e("123123213",dataRepository.getData())
+
+        val itemAdapter = SaveNameAdapter(itemList)
+        binding.nameGridRecyclerview.adapter = itemAdapter
+        binding.nameGridRecyclerview.layoutManager = LinearLayoutManager(context)
 
         return view
     }
