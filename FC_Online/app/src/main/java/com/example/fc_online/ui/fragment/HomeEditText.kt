@@ -12,6 +12,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.fc_online.R
 import com.example.fc_online.util.SharedViewModel
 import com.example.fc_online.data.UserInfo
@@ -29,11 +30,12 @@ class HomeEditText : Fragment() {
     private val sharedViewModel: SharedViewModel by activityViewModels()
     private lateinit var dataRepository: DataRepository
     private lateinit var adapter: SaveNameAdapter
+//    private lateinit var recyclerView: RecyclerView
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
         dataRepository = DataRepository(context)
-        adapter = SaveNameAdapter(dataRepository.getTexts().toList())
+//        adapter = SaveNameAdapter(dataRepository.getTexts().toList())
     }
 
     override fun onCreateView(
@@ -44,9 +46,13 @@ class HomeEditText : Fragment() {
 
         userEditText()
 
-        binding.rvNameGrid.adapter = adapter
+//        binding.rvNameGrid.adapter = adapter
 //        binding.rvNameGrid.layoutManager = GridLayoutManager(context,3)
+//        binding.rvNameGrid.layoutManager = LinearLayoutManager(context)
+
+        adapter = SaveNameAdapter(dataRepository.getTexts().toMutableList(), dataRepository)
         binding.rvNameGrid.layoutManager = LinearLayoutManager(context)
+        binding.rvNameGrid.adapter = adapter
 
         return view
     }

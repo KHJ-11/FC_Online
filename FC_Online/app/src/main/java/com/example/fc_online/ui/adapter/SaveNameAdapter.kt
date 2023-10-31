@@ -9,10 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.fc_online.R
 import com.example.fc_online.util.DataRepository
 
-class SaveNameAdapter(private val data: List<String>)
+class SaveNameAdapter(private val data: MutableList<String>,
+    private val dataRepository: DataRepository)
     : RecyclerView.Adapter<SaveNameAdapter.Nameholder>() {
 
-    private lateinit var dataRepository: DataRepository
+//    private lateinit var dataRepository: DataRepository
 
     inner class Nameholder(rowRoot: View): RecyclerView.ViewHolder(rowRoot) {
         val nameItem: TextView = rowRoot.findViewById(R.id.textSaveName)
@@ -32,6 +33,11 @@ class SaveNameAdapter(private val data: List<String>)
 //        holder.setData(nameList[position])
         holder.nameItem.text = data[position]
 
+        holder.closeItem.setOnClickListener {
+            dataRepository.removeText(text)
+            data.removeAt(position)
+            notifyItemRemoved(position)
+        }
 
     }
 

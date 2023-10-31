@@ -9,21 +9,21 @@ class DataRepository(context: Context) {
     fun saveText(text: String) {
         val currentTexts = getTexts().toMutableSet()
         currentTexts.add(text)
-        editor.putStringSet("texts", currentTexts)
-        editor.apply()
-//        sharedPreferences.edit().putStringSet("texts", currentTexts).apply()
+//        editor.putStringSet("texts", currentTexts)
+//        editor.apply()
+        sharedPreferences.edit().putStringSet("texts", currentTexts).apply()
     }
 
     fun getTexts(): Set<String> {
         return sharedPreferences.getStringSet("texts", emptySet()) ?: emptySet()
     }
 
-//    fun removeText(text: String) {
-//        val currentTexts = getTexts().toMutableSet()
-//        currentTexts.remove(text)
-////        editor.putStringSet("texts", currentTexts)
-////        editor.apply()
-//        sharedPreferences.edit().putStringSet("texts", currentTexts).apply()
-//    }
+    fun removeText(text: String) {
+        val currentTexts = getTexts().toMutableSet()
+        currentTexts.remove(text)
+//        editor.putStringSet("texts", currentTexts)
+//        editor.apply()
+        sharedPreferences.edit().putStringSet("texts", currentTexts).apply()
+    }
 
 }
