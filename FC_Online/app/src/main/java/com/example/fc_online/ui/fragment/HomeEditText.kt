@@ -3,7 +3,6 @@ package com.example.fc_online.ui.fragment
 import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,18 +10,13 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.fc_online.R
-import com.example.fc_online.data.SaveName
-import com.example.fc_online.data.TradeType
 import com.example.fc_online.util.SharedViewModel
 import com.example.fc_online.data.UserInfo
 import com.example.fc_online.databinding.FragmentHomeEditTextBinding
 import com.example.fc_online.ui.adapter.SaveNameAdapter
-import com.example.fc_online.ui.adapter.TradeAdapter
 import com.example.fc_online.util.Constants.KEY
 import com.example.fc_online.util.Constants.api
 import com.example.fc_online.util.DataRepository
@@ -34,10 +28,12 @@ class HomeEditText : Fragment() {
     private lateinit var binding: FragmentHomeEditTextBinding
     private val sharedViewModel: SharedViewModel by activityViewModels()
     private lateinit var dataRepository: DataRepository
+    private lateinit var adapter: SaveNameAdapter
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
         dataRepository = DataRepository(context)
+        adapter = SaveNameAdapter(dataRepository.getTexts().toList())
     }
 
     override fun onCreateView(
@@ -48,14 +44,9 @@ class HomeEditText : Fragment() {
 
         userEditText()
 
-        val itemList = ArrayList<SaveName>()
-//        itemList.add(SaveName("123123"))
-//        itemList.add(SaveName("${dataRepository.getData()}"))
-        Log.e("123123213",dataRepository.getData())
-
-        val itemAdapter = SaveNameAdapter(itemList)
-        binding.nameGridRecyclerview.adapter = itemAdapter
-        binding.nameGridRecyclerview.layoutManager = LinearLayoutManager(context)
+        binding.rvNameGrid.adapter = adapter
+//        binding.rvNameGrid.layoutManager = GridLayoutManager(context,3)
+        binding.rvNameGrid.layoutManager = LinearLayoutManager(context)
 
         return view
     }
@@ -65,14 +56,6 @@ class HomeEditText : Fragment() {
             getUserInfo()
         }
     }
-
-//    private fun setAdapter(nameList: ArrayList<SaveName>) {
-//        val mNameAdapter = SaveNameAdapter(nameList)
-//        binding.nameGridRecyclerview.apply {
-//            adapter = mNameAdapter
-//            layoutManager = GridLayoutManager(context,3)
-//        }
-//    }
 
     private fun getUserInfo() {
         val callGetUserInfo = api.getUserInfo("${KEY}", "${binding.homeEditText.text.toString()}")

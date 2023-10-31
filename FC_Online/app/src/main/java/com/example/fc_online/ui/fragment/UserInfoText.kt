@@ -63,7 +63,10 @@ class UserInfoText : Fragment() {
 
     private fun saveData() {
         val data = arguments?.getString("nickname").toString()
-        dataRepository.saveData(data)
+        if (data.isNotEmpty()) {
+            dataRepository.saveText(data)
+
+        }
     }
 
 //    private fun nameData(): MutableList<SaveName> {
