@@ -2,6 +2,7 @@ package com.example.fc_online.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
@@ -10,10 +11,15 @@ import com.example.fc_online.R
 import com.example.fc_online.util.DataRepository
 
 class SaveNameAdapter(private val data: MutableList<String>,
-    private val dataRepository: DataRepository)
+    private val dataRepository: DataRepository,
+    private val itemClickListener: ItemClickListener)
     : RecyclerView.Adapter<SaveNameAdapter.Nameholder>() {
 
 //    private lateinit var dataRepository: DataRepository
+
+    interface ItemClickListener {
+        fun onItemClick(text: String)
+    }
 
     inner class Nameholder(rowRoot: View): RecyclerView.ViewHolder(rowRoot) {
         val nameItem: TextView = rowRoot.findViewById(R.id.textSaveName)
@@ -37,6 +43,10 @@ class SaveNameAdapter(private val data: MutableList<String>,
             dataRepository.removeText(text)
             data.removeAt(position)
             notifyItemRemoved(position)
+        }
+
+        holder.nameItem.setOnClickListener {
+            itemClickListener.onItemClick(data[position])
         }
 
     }

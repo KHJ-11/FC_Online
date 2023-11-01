@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
@@ -25,7 +26,8 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class HomeEditText : Fragment() {
+class HomeEditText : Fragment(),
+    SaveNameAdapter.ItemClickListener {
     private lateinit var binding: FragmentHomeEditTextBinding
     private val sharedViewModel: SharedViewModel by activityViewModels()
     private lateinit var dataRepository: DataRepository
@@ -46,15 +48,15 @@ class HomeEditText : Fragment() {
 
         userEditText()
 
-//        binding.rvNameGrid.adapter = adapter
-//        binding.rvNameGrid.layoutManager = GridLayoutManager(context,3)
-//        binding.rvNameGrid.layoutManager = LinearLayoutManager(context)
-
-        adapter = SaveNameAdapter(dataRepository.getTexts().toMutableList(), dataRepository)
+        adapter = SaveNameAdapter(dataRepository.getTexts().toMutableList(), dataRepository, this)
         binding.rvNameGrid.layoutManager = LinearLayoutManager(context)
         binding.rvNameGrid.adapter = adapter
 
         return view
+    }
+
+    override fun onItemClick(text: String) {
+        binding.homeEditText.setText(text)
     }
 
     private fun userEditText() {
