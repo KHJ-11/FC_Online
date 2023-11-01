@@ -4,6 +4,7 @@ import com.example.fc_online.data.SeasonId
 import com.example.fc_online.data.SpidName
 import com.example.fc_online.data.TradeType
 import com.example.fc_online.data.UserInfo
+import com.example.fc_online.data.UserRanked
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.GET
@@ -44,5 +45,11 @@ interface ApiService {
         @Query("offset") offset: Int,
         @Query("limit") limit: Int
     ): Response<List<TradeType>>
+
+    @GET("users/{accessid}/maxdivision")
+    fun getUserRanked(
+        @Header("Authorization") Authorization: String,
+        @Path("accessid") accessid: String
+    ): Call<List<UserRanked>>
 
 }
