@@ -1,5 +1,7 @@
 package com.example.fc_online.api
 
+import com.example.fc_online.data.DivisionType
+import com.example.fc_online.data.MatchType
 import com.example.fc_online.data.SeasonId
 import com.example.fc_online.data.SpidName
 import com.example.fc_online.data.TradeType
@@ -37,19 +39,27 @@ interface ApiService {
     fun getSeasonId(
     ): Call<List<SeasonId>>
 
-    @GET("users/{accessid}/markets?")
-    suspend fun getTradeType2(
-        @Header("Authorization") Authorization: String,
-        @Path("accessid") accessid: String,
-        @Query("tradetype") tradetype: String,
-        @Query("offset") offset: Int,
-        @Query("limit") limit: Int
-    ): Response<List<TradeType>>
+//    @GET("users/{accessid}/markets?")
+//    suspend fun getTradeType2(
+//        @Header("Authorization") Authorization: String,
+//        @Path("accessid") accessid: String,
+//        @Query("tradetype") tradetype: String,
+//        @Query("offset") offset: Int,
+//        @Query("limit") limit: Int
+//    ): Response<List<TradeType>>
 
     @GET("users/{accessid}/maxdivision")
     fun getUserRanked(
         @Header("Authorization") Authorization: String,
         @Path("accessid") accessid: String
     ): Call<List<UserRanked>>
+
+    @GET("https://static.api.nexon.co.kr/fconline/latest/matchtype.json")
+    fun getMatchType(
+    ): Call<List<MatchType>>
+
+    @GET("https://static.api.nexon.co.kr/fconline/latest/division.json")
+    fun getDivisionType(
+    ): Call<List<DivisionType>>
 
 }

@@ -5,27 +5,30 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragment.UserInfoText"
     android:orientation="vertical"
-    android:layout_margin="20dp">
+    android:layout_margin="20dp"
+    android:background="@color/black">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="1.6"
         android:layout_margin="20dp">
 
-        <Button
+        <ImageView
             android:id="@+id/saveButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="즐겨찾기"/>
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/va_nonstar"
+            android:backgroundTint="@color/white"/>
 
         <TextView
             android:id="@+id/userTextName"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
 
         <TextView
             android:id="@+id/userTextLevel"
@@ -33,20 +36,60 @@
             android:layout_height="match_parent"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_weight="1">
+        android:background="@color/silver_t"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/silver2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="매치 종류"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="최고 등급"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="달성 날짜"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvUserRanked"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
