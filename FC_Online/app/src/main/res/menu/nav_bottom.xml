@@ -3,12 +3,13 @@
     <item
         android:id="@+id/userInfoText"
         android:icon="@drawable/ic_launcher_foreground"
-        android:title="userInfoText"/>
+        android:title="감독 정보"/>
     <item
         android:id="@+id/tradeRecord"
         android:icon="@drawable/ic_launcher_foreground"
-        android:title="tradeRecord"/>
+        android:title="거래 목록"/>
     <item
+        android:id="@+id/matchPlay"
         android:icon="@drawable/ic_launcher_foreground"
-        android:title="Account"/>
+        android:title="경기 기록"/>
 </menu>

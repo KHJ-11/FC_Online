@@ -23,8 +23,6 @@ class RankedAdapter(private val rankedList: ArrayList<UserRanked>)
         val dateItem : TextView = rowRoot.findViewById(R.id.rankedDate)
 
         fun setData(item: UserRanked) {
-//            matchItem.text = item.matchType.toString()
-//            divisionItem.text = item.division.toString()
             dateItem.text = item.achievementDate.substring(0,10)
 
             val callGetMatchType = api.getMatchType()

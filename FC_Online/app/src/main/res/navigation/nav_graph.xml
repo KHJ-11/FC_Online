@@ -41,7 +41,11 @@
         android:id="@+id/tradeRecordBuy"
         android:name="com.example.fc_online.ui.fragment.TradeRecordBuy"
         android:label="fragment_trade_record_buy"
-        tools:layout="@layout/fragment_trade_record_buy" />
+        tools:layout="@layout/fragment_trade_record_buy" >
+        <action
+            android:id="@+id/action_tradeRecordBuy_to_matchPlay"
+            app:destination="@id/matchPlay" />
+    </fragment>
     <fragment
         android:id="@+id/tradeRecordSell"
         android:name="com.example.fc_online.ui.fragment.TradeRecordSell"
@@ -52,4 +56,9 @@
         android:name="com.example.fc_online.ui.fragment.TradeRecordStatistics"
         android:label="fragment_trade_record_statistics"
         tools:layout="@layout/fragment_trade_record_statistics" />
+    <fragment
+        android:id="@+id/matchPlay"
+        android:name="com.example.fc_online.ui.fragment.MatchPlay"
+        android:label="fragment_match_play"
+        tools:layout="@layout/fragment_match_play" />
 </navigation>

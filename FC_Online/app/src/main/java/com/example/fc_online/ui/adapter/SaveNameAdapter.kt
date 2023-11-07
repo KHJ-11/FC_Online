@@ -15,8 +15,6 @@ class SaveNameAdapter(private val data: MutableList<String>,
     private val itemClickListener: ItemClickListener)
     : RecyclerView.Adapter<SaveNameAdapter.Nameholder>() {
 
-//    private lateinit var dataRepository: DataRepository
-
     interface ItemClickListener {
         fun onItemClick(text: String)
     }
@@ -25,9 +23,6 @@ class SaveNameAdapter(private val data: MutableList<String>,
         val nameItem: TextView = rowRoot.findViewById(R.id.textSaveName)
         val closeItem: ImageView = rowRoot.findViewById(R.id.iv_close)
 
-//        fun setData(item: SaveName) {
-//            nameItem.text = dataRepository.getData()
-//        }
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SaveNameAdapter.Nameholder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_save_nickname, parent, false)
@@ -36,7 +31,6 @@ class SaveNameAdapter(private val data: MutableList<String>,
 
     override fun onBindViewHolder(holder: SaveNameAdapter.Nameholder, position: Int) {
         val text = data[position]
-//        holder.setData(nameList[position])
         holder.nameItem.text = data[position]
 
         holder.closeItem.setOnClickListener {
