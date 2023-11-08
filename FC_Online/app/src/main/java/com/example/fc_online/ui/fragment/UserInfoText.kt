@@ -96,4 +96,8 @@ class UserInfoText : Fragment() {
         binding.rvUserRanked.addItemDecoration(DividerItemDecoration(binding.rvUserRanked.context, LinearLayoutManager(context).orientation))
     }
 
+    private fun fieldSquad() {
+
+    }
+
 }

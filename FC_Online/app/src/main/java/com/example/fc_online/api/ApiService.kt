@@ -2,7 +2,7 @@ package com.example.fc_online.api
 
 import com.example.fc_online.data.DivisionType
 import com.example.fc_online.data.MatchType
-import com.example.fc_online.data.MatchValues
+import com.example.fc_online.data.match.MatchValues
 import com.example.fc_online.data.SeasonId
 import com.example.fc_online.data.SpidName
 import com.example.fc_online.data.TradeType
@@ -10,7 +10,6 @@ import com.example.fc_online.data.UserInfo
 import com.example.fc_online.data.UserRanked
 import com.google.gson.JsonArray
 import retrofit2.Call
-import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.Path
