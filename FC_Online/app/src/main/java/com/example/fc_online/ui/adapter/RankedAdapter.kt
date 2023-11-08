@@ -1,5 +1,6 @@
 package com.example.fc_online.ui.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -40,7 +41,7 @@ class RankedAdapter(private val rankedList: ArrayList<UserRanked>)
                 }
 
                 override fun onFailure(call: Call<List<MatchType>>, t: Throwable) {
-
+                    Log.e("실패", "Error: ${t.message}")
                 }
 
             })

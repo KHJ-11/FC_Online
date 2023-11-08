@@ -26,15 +26,13 @@ class PlayAdapter(private val playList: ArrayList<PlayMatch>)
 
     }
 
-    override fun getItemCount(): Int {
-        return playList.size
+    override fun onBindViewHolder(holder: PlayHolder, position: Int) {
+        holder.setData(playList[position])
 
     }
 
-    override fun onBindViewHolder(holder: PlayHolder, position: Int) {
-        holder.setData(playList[position])
-//        val text = playList[position]
-//        holder.matchid.text = text.playMatch
+    override fun getItemCount(): Int {
+        return playList.size
 
     }
 }

@@ -1,6 +1,7 @@
 package com.example.fc_online.ui.fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -44,6 +45,7 @@ class TradeRecordSell : Fragment() {
             }
 
             override fun onFailure(call: Call<List<TradeType>>, t: Throwable) {
+                Log.e("실패", "Error: ${t.message}")
             }
 
         })

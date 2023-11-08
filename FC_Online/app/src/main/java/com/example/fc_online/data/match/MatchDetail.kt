@@ -1,7 +1,7 @@
 package com.example.fc_online.data.match
 
 data class MatchDetail(
-    val averageRating: Int,
+    val averageRating: Float,
     val controller: String,
     val cornerKick: Int,
     val dribble: Int,

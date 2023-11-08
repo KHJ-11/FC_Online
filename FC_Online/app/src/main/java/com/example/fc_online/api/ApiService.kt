@@ -2,6 +2,7 @@ package com.example.fc_online.api
 
 import com.example.fc_online.data.DivisionType
 import com.example.fc_online.data.MatchType
+import com.example.fc_online.data.Position
 import com.example.fc_online.data.match.MatchValues
 import com.example.fc_online.data.SeasonId
 import com.example.fc_online.data.SpidName
@@ -77,5 +78,9 @@ interface ApiService {
         @Header("Authorization") Authorization: String,
         @Path("matchid") matchId: String
     ) : Call<MatchValues>
+
+    @GET("https://static.api.nexon.co.kr/fconline/latest/spposition.json")
+    fun  getPositionName(
+    ): Call<List<Position>>
 
 }

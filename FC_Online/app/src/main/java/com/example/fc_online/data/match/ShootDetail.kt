@@ -3,8 +3,8 @@ package com.example.fc_online.data.match
 data class ShootDetail(
     val assist: Boolean,
     val assistSpId: Int,
-    val assistX: Int,
-    val assistY: Int,
+    val assistX: Float,
+    val assistY: Float,
     val goalTime: Int,
     val hitPost: Boolean,
     val inPenalty: Boolean,

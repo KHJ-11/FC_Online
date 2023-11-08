@@ -70,7 +70,7 @@ class MatchPlay : Fragment() {
             }
 
             override fun onFailure(call: Call<JsonArray>, t: Throwable) {
-
+                Log.e("실패", "Error: ${t.message}")
             }
 
         })

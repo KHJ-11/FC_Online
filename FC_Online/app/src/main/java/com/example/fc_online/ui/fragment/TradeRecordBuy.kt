@@ -125,6 +125,7 @@ class TradeRecordBuy : Fragment() {
             }
 
             override fun onFailure(call: Call<List<TradeType>>, t: Throwable) {
+                Log.e("실패", "Error: ${t.message}")
             }
 
         })

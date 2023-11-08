@@ -14,15 +14,19 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fc_online.MainActivity
 import com.example.fc_online.R
+import com.example.fc_online.data.PlayMatch
 import com.example.fc_online.data.SaveName
 import com.example.fc_online.data.UserRanked
+import com.example.fc_online.data.match.MatchValues
 import com.example.fc_online.util.SharedViewModel
 import com.example.fc_online.databinding.FragmentUserInfoTextBinding
 import com.example.fc_online.ui.adapter.RankedAdapter
 import com.example.fc_online.ui.adapter.SaveNameAdapter
 import com.example.fc_online.util.Constants
+import com.example.fc_online.util.Constants.KEY
 import com.example.fc_online.util.Constants.api
 import com.example.fc_online.util.DataRepository
+import com.google.gson.JsonArray
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -50,6 +54,7 @@ class UserInfoText : Fragment() {
         (activity as MainActivity)
 
         userRankedText()
+        fieldSquad()
 
         return view
     }
@@ -97,7 +102,42 @@ class UserInfoText : Fragment() {
     }
 
     private fun fieldSquad() {
+        val callGetPlayMatch = api.getPlayMatch("${Constants.KEY}","${sharedViewModel.sharedData}",52,0,1)
 
+        callGetPlayMatch.enqueue(object : Callback<JsonArray> {
+            override fun onResponse(call: Call<JsonArray>, response: Response<JsonArray>) {
+                val jsonArray: JsonArray? = response.body()
+
+                if (jsonArray != null && jsonArray.size() > 0) {
+                    val jsonString: String = jsonArray[0].asString
+
+                    val callGetMatchValues = api.getMatchValues("${KEY}", jsonString)
+
+                    callGetMatchValues.enqueue(object : Callback<MatchValues> {
+                        override fun onResponse(call: Call<MatchValues>, response: Response<MatchValues>) {
+                            val playerInfo = response.body()
+
+                            if (playerInfo != null) {
+                                Log.e("awd",playerInfo.matchInfo.get(0).player.toString())
+                            }
+
+                        }
+
+                        override fun onFailure(call: Call<MatchValues>, t: Throwable) {
+                            Log.e("실패", "Error: ${t.message}")
+                        }
+
+                    })
+
+                }
+
+
+            }
+            override fun onFailure(call: Call<JsonArray>, t: Throwable) {
+
+            }
+
+        })
     }
 
 }

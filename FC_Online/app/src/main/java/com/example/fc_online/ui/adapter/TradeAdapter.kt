@@ -107,7 +107,7 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
                         }
 
                         override fun onFailure(call: Call<List<SeasonId>>, t: Throwable) {
-
+                            Log.e("실패", "Error: ${t.message}")
                         }
 
                     })
@@ -115,7 +115,7 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
                 }
 
                 override fun onFailure(call: Call<List<SpidName>>, t: Throwable) {
-
+                    Log.e("실패", "Error: ${t.message}")
                 }
             })
 
