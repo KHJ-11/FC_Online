@@ -17,21 +17,21 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LS"
+            android:id="@+id/position_LS_26"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_ST"
+            android:id="@+id/position_ST_25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RS"
+            android:id="@+id/position_RS_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
@@ -46,35 +46,35 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LW"
+            android:id="@+id/position_LW_27"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LF"
+            android:id="@+id/position_LF_22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_CF"
+            android:id="@+id/position_CF_21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RF"
+            android:id="@+id/position_RF_20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RW"
+            android:id="@+id/position_RW_23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"/>
@@ -89,21 +89,21 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LAM"
+            android:id="@+id/position_LAM_19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_CAM"
+            android:id="@+id/position_CAM_18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RAM"
+            android:id="@+id/position_RAM_17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
@@ -118,35 +118,35 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LM"
+            android:id="@+id/position_LM_16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LCM"
+            android:id="@+id/position_LCM_15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_CM"
+            android:id="@+id/position_CM_14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RCM"
+            android:id="@+id/position_RCM_13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RM"
+            android:id="@+id/position_RM_12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"/>
@@ -161,35 +161,35 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LWB"
+            android:id="@+id/position_LWB_8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LDM"
+            android:id="@+id/position_LDM_11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_CDM"
+            android:id="@+id/position_CDM_10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RDM"
+            android:id="@+id/position_RDM_9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RWB"
+            android:id="@+id/position_RWB_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"/>
@@ -204,35 +204,35 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LB"
+            android:id="@+id/position_LB_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LCB"
+            android:id="@+id/position_LCB_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_SW"
+            android:id="@+id/position_CB_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RCB"
+            android:id="@+id/position_RCB_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="10dp"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RB"
+            android:id="@+id/position_RB_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"/>
@@ -247,7 +247,7 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_GK"
+            android:id="@+id/position_GK_0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"/>

@@ -3,6 +3,7 @@ package com.example.fc_online.ui.fragment
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.text.Layout
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -16,10 +17,12 @@ import com.example.fc_online.MainActivity
 import com.example.fc_online.R
 import com.example.fc_online.data.PlayMatch
 import com.example.fc_online.data.SaveName
+import com.example.fc_online.data.SpidName
 import com.example.fc_online.data.UserRanked
 import com.example.fc_online.data.match.MatchValues
 import com.example.fc_online.util.SharedViewModel
 import com.example.fc_online.databinding.FragmentUserInfoTextBinding
+import com.example.fc_online.databinding.ItemPlayerBinding
 import com.example.fc_online.ui.adapter.RankedAdapter
 import com.example.fc_online.ui.adapter.SaveNameAdapter
 import com.example.fc_online.util.Constants
@@ -115,11 +118,21 @@ class UserInfoText : Fragment() {
 
                     callGetMatchValues.enqueue(object : Callback<MatchValues> {
                         override fun onResponse(call: Call<MatchValues>, response: Response<MatchValues>) {
-                            val playerInfo = response.body()
+                            val playerInfo = response.body()?.matchInfo?.get(0)?.player
 
-                            if (playerInfo != null) {
-                                Log.e("awd",playerInfo.matchInfo.get(0).player.toString())
-                            }
+                            val filterlist = playerInfo?.filter { it.spPosition <= 27 }
+                            val datalist = filterlist?.map { it.spPosition }
+                            Log.e("awddawdaw123", datalist.toString())
+
+                            val layoutViews: List<ItemPlayerBinding> = listOf(
+                                binding.field.positionGK0, binding.field.positionRWB2, binding.field.positionRB3, binding.field.positionRCB4,
+                                binding.field.positionCB5, binding.field.positionLCB6, binding.field.positionLB7, binding.field.positionLWB8,
+                                binding.field.positionRDM9, binding.field.positionCDM10, binding.field.positionLDM11, binding.field.positionRM12,
+                                binding.field.positionRCM13, binding.field.positionCM14, binding.field.positionLCM15, binding.field.positionLM16,
+                                binding.field.positionRAM17, binding.field.positionCAM18, binding.field.positionLAM19, binding.field.positionRF20,
+                                binding.field.positionCF21, binding.field.positionLF22, binding.field.positionRW23, binding.field.positionRS24,
+                                binding.field.positionST25, binding.field.positionLS26, binding.field.positionLW27
+                            )
 
                         }
 
@@ -134,7 +147,7 @@ class UserInfoText : Fragment() {
 
             }
             override fun onFailure(call: Call<JsonArray>, t: Throwable) {
-
+                Log.e("실패", "Error: ${t.message}")
             }
 
         })
