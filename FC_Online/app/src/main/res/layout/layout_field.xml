@@ -21,20 +21,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_ST_25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_RS_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
 
     </LinearLayout>
 
@@ -50,34 +53,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_LF_22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_CF_21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_RF_20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_RW_23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
 
     </LinearLayout>
 
@@ -93,20 +101,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_CAM_18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_RAM_17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
 
     </LinearLayout>
 
@@ -122,34 +133,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_LCM_15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_CM_14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_RCM_13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_RM_12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
 
     </LinearLayout>
 
@@ -165,34 +181,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_LDM_11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_CDM_10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_RDM_9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_RWB_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
 
     </LinearLayout>
 
@@ -208,34 +229,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_LCB_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_CB_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_RCB_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
             android:id="@+id/position_RB_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
 
     </LinearLayout>
 
@@ -250,7 +276,8 @@
             android:id="@+id/position_GK_0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
 
     </LinearLayout>
 

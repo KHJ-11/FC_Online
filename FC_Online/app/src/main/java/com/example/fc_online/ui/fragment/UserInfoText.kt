@@ -121,31 +121,25 @@ class UserInfoText : Fragment() {
 
                             val play = response.body()
                             val home = play?.matchInfo?.get(0)?.player
-                            Log.d("awdwad", home.toString())
+
                             val filter = home?.filter { it.spPosition <= 27 }
+                            val datalist = filter?.map { it.spPosition }
+                            val sort = datalist?.sorted()
 
-//                            val playerInfo = response.body()?.matchInfo?.get(0)?.player
-//
-//                            val filterlist = playerInfo?.filter { it.spPosition <= 27 }
-//                            val datalist = filterlist?.map { it.spPosition }
-//                            Log.e("awddawdaw123", datalist.toString())
-//
-//                            val layoutViews: List<ItemPlayerBinding> = listOf(
-//                                binding.field.positionGK0, binding.field.positionRWB2, binding.field.positionRB3, binding.field.positionRCB4,
-//                                binding.field.positionCB5, binding.field.positionLCB6, binding.field.positionLB7, binding.field.positionLWB8,
-//                                binding.field.positionRDM9, binding.field.positionCDM10, binding.field.positionLDM11, binding.field.positionRM12,
-//                                binding.field.positionRCM13, binding.field.positionCM14, binding.field.positionLCM15, binding.field.positionLM16,
-//                                binding.field.positionRAM17, binding.field.positionCAM18, binding.field.positionLAM19, binding.field.positionRF20,
-//                                binding.field.positionCF21, binding.field.positionLF22, binding.field.positionRW23, binding.field.positionRS24,
-//                                binding.field.positionST25, binding.field.positionLS26, binding.field.positionLW27
-//                            )
+                            if (datalist != null) {
+                                for (index in 0 until datalist.size) {
 
+                                    if (sort?.get(index) == 0) {
+                                        binding.field.positionGK0.apply {
+                                            itemPlayerUi.visibility = View.VISIBLE
+                                            fieldPosition.text = "GK"
+                                            fieldName.text = home.get(0).spId.toString()
+                                        }
+                                    }
+                                    
+                                }
+                            }
 
-//                            if (data != null) {
-//                                for (index in 0 until data.matchInfo.get(0).player.size) {
-//                                    Log.e("dsadawdq", data.matchInfo.get(0).player.get(index).spPosition.toString())
-//                                }
-//                            }
 
                         }
 
