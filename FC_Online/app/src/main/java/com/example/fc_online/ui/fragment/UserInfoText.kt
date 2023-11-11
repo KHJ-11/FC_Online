@@ -129,13 +129,18 @@ class UserInfoText : Fragment() {
                             if (datalist != null) {
                                 for (index in 0 until datalist.size) {
 
-                                    if (sort?.get(index) == 0) {
-                                        binding.field.positionGK0.apply {
+//                                    val resourceId = resources.getIdentifier("position_$index", "id", context?.packageName)
+
+                                    sort?.get(index)?.takeIf { it == 0 }?.let {
+                                        binding.field.position0.apply {
                                             itemPlayerUi.visibility = View.VISIBLE
                                             fieldPosition.text = "GK"
                                             fieldName.text = home.get(0).spId.toString()
+                                            fieldGrade.text = home.get(0).spGrade.toString()
                                         }
                                     }
+
+
                                     
                                 }
                             }

@@ -17,7 +17,7 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LS_26"
+            android:id="@+id/position_26"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -25,7 +25,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_ST_25"
+            android:id="@+id/position_25"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -33,7 +33,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RS_24"
+            android:id="@+id/position_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -49,7 +49,7 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LW_27"
+            android:id="@+id/position_27"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -57,7 +57,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LF_22"
+            android:id="@+id/position_22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -65,7 +65,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_CF_21"
+            android:id="@+id/position_21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -73,7 +73,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RF_20"
+            android:id="@+id/position_20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -81,7 +81,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RW_23"
+            android:id="@+id/position_23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -97,7 +97,7 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LAM_19"
+            android:id="@+id/position_19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -105,7 +105,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_CAM_18"
+            android:id="@+id/position_18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -113,7 +113,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RAM_17"
+            android:id="@+id/position_17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -129,7 +129,7 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LM_16"
+            android:id="@+id/position_16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -137,7 +137,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LCM_15"
+            android:id="@+id/position_15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -145,7 +145,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_CM_14"
+            android:id="@+id/position_14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -153,7 +153,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RCM_13"
+            android:id="@+id/position_13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -161,7 +161,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RM_12"
+            android:id="@+id/position_12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -177,7 +177,7 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LWB_8"
+            android:id="@+id/position_8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -185,7 +185,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LDM_11"
+            android:id="@+id/position_11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -193,7 +193,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_CDM_10"
+            android:id="@+id/position_10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -201,7 +201,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RDM_9"
+            android:id="@+id/position_9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -209,7 +209,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RWB_2"
+            android:id="@+id/position_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -225,7 +225,7 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LB_7"
+            android:id="@+id/position_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -233,7 +233,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_LCB_6"
+            android:id="@+id/position_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -241,7 +241,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_CB_5"
+            android:id="@+id/position_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -249,7 +249,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RCB_4"
+            android:id="@+id/position_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -257,7 +257,7 @@
             android:visibility="invisible"/>
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_RB_3"
+            android:id="@+id/position_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -273,7 +273,7 @@
         android:gravity="center">
 
         <include layout="@layout/item_player"
-            android:id="@+id/position_GK_0"
+            android:id="@+id/position_0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
