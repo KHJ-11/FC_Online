@@ -125,14 +125,14 @@ class UserInfoText : Fragment() {
 
                             val home = play?.matchInfo?.get(0)?.player
 
-                            val filterPosition = home?.filter { it.spPosition <= 27 }
-                            val positionList = filterPosition?.map { it.spPosition }
-                            val positionSort = positionList?.sorted()
-                            Log.e("AWdawdwad", home.toString())
-                            Log.e("AWdawdwad", positionSort.toString())
+//                            val filterPosition = home?.filter { it.spPosition <= 27 }
+//                            val positionList = filterPosition?.map { it.spPosition }
+                            val filterPositionList = home?.map { it.spPosition }
+                            Log.e("AWddawawd", filterPositionList.toString())
+//                            val positionSort = positionList?.sorted()
 
-                            if (positionList != null) {
-                                for (index in 0 until positionList.size) {
+                            if (filterPositionList != null) {
+                                for (index in 0 until filterPositionList.size) {
 
                                     val spid = home.get(index).spId.toString()
                                     val pid = spid.substring(spid.length - 6, spid.length)
@@ -161,7 +161,7 @@ class UserInfoText : Fragment() {
                                                     val season = filterSeasonImage?.joinToString()
 
                                                     // 추후 로직 간략화 예정
-                                                    positionSort?.get(index)?.takeIf { it == 0 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 0 }?.let {
                                                         binding.field.position0.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "GK"
@@ -189,7 +189,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 2 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 2 }?.let {
                                                         binding.field.position2.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "RWB"
@@ -217,7 +217,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 3 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 3 }?.let {
                                                         binding.field.position3.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "RB"
@@ -245,7 +245,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 4 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 4 }?.let {
                                                         binding.field.position4.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "RCB"
@@ -273,7 +273,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 5 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 5 }?.let {
                                                         binding.field.position5.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "CB"
@@ -301,7 +301,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 6 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 6 }?.let {
                                                         binding.field.position6.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "LCB"
@@ -329,7 +329,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 7 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 7 }?.let {
                                                         binding.field.position7.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "LB"
@@ -357,7 +357,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 8 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 8 }?.let {
                                                         binding.field.position8.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "LWB"
@@ -385,7 +385,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 9 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 9 }?.let {
                                                         binding.field.position9.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "RDM"
@@ -413,7 +413,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 10 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 10 }?.let {
                                                         binding.field.position10.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "CDM"
@@ -441,7 +441,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 11 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 11 }?.let {
                                                         binding.field.position11.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "LDM"
@@ -469,7 +469,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 12 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 12 }?.let {
                                                         binding.field.position12.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "RM"
@@ -497,7 +497,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 13 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 13 }?.let {
                                                         binding.field.position13.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "RCM"
@@ -525,7 +525,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 14 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 14 }?.let {
                                                         binding.field.position14.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "CM"
@@ -553,7 +553,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 15 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 15 }?.let {
                                                         binding.field.position15.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "LCM"
@@ -581,7 +581,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 16 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 16 }?.let {
                                                         binding.field.position16.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "LM"
@@ -609,7 +609,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 17 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 17 }?.let {
                                                         binding.field.position17.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "RAM"
@@ -637,7 +637,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 18 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 18 }?.let {
                                                         binding.field.position18.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "CAM"
@@ -665,7 +665,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 19 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 19 }?.let {
                                                         binding.field.position19.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "LAM"
@@ -693,7 +693,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 20 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 20 }?.let {
                                                         binding.field.position20.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "RF"
@@ -721,7 +721,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 21 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 21 }?.let {
                                                         binding.field.position21.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "CF"
@@ -749,7 +749,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 22 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 22 }?.let {
                                                         binding.field.position22.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "LF"
@@ -777,7 +777,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 23 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 23 }?.let {
                                                         binding.field.position23.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "RW"
@@ -805,7 +805,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 24 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 24 }?.let {
                                                         binding.field.position24.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "RS"
@@ -833,7 +833,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 25 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 25 }?.let {
                                                         binding.field.position25.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "ST"
@@ -861,7 +861,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 26 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 26 }?.let {
                                                         binding.field.position26.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "LS"
@@ -889,7 +889,7 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    positionSort?.get(index)?.takeIf { it == 27 }?.let {
+                                                    filterPositionList?.get(index)?.takeIf { it == 27 }?.let {
                                                         binding.field.position27.apply {
                                                             itemPlayerUi.visibility = View.VISIBLE
                                                             fieldPosition.text = "LW"
