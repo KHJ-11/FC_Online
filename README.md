@@ -28,9 +28,14 @@ FC온라인으로 변경되면서 해당 Open Api가 변경됨으로 새롭게 �
 ### [Preview]
 ![image](https://github.com/KHJ-11/FC_Online/assets/72050086/cc015bfc-54a1-4484-a917-a486ba6004d4)
 ![image](https://github.com/KHJ-11/FC_Online/assets/72050086/5a4be556-f7c6-4645-a378-f986ea7a6876)
+
 시작화면 : 감독명 입력
+
 ![image](https://github.com/KHJ-11/FC_Online/assets/72050086/e95274f0-0161-4d0f-aa69-4d1e328cdff0)
+
 홈 화면 : 감독정보(닉네임, 레벨), 달성한 최고 등급정보, 최근에 사용한 팀 스쿼드 및 선수정보
+
 ![image](https://github.com/KHJ-11/FC_Online/assets/72050086/ae3ff476-ed09-4b09-8ab7-1ea736dd08b7)
 ![image](https://github.com/KHJ-11/FC_Online/assets/72050086/2dcf9f21-0051-439c-bae8-7769c756a19a)
+
 거래목록 : 최근에 구매 및 판매한 선수(선수명, 선수가치, 시즌, 강화등급)
