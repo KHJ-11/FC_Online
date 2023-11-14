@@ -128,7 +128,6 @@ class UserInfoText : Fragment() {
 //                            val filterPosition = home?.filter { it.spPosition <= 27 }
 //                            val positionList = filterPosition?.map { it.spPosition }
                             val filterPositionList = home?.map { it.spPosition }
-                            Log.e("AWddawawd", filterPositionList.toString())
 //                            val positionSort = positionList?.sorted()
 
                             if (filterPositionList != null) {
