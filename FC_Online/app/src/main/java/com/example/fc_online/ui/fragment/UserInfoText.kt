@@ -918,6 +918,23 @@ class UserInfoText : Fragment() {
                                                     }
 
 
+                                                    fun setPlayerField(position: Int, positionText: String) {
+                                                        binding.field.apply {
+                                                            val playerUi = when(position) {
+                                                                0 -> position0
+                                                                2 -> position2
+                                                                3 -> position3
+                                                                else -> return
+                                                            }
+                                                            playerUi.apply {
+                                                                itemPlayerUi.visibility = View.VISIBLE
+                                                                fieldPosition.text = positionText
+                                                                fieldName.text = filterNameList?.joinToString()
+                                                                fieldGrade.text = home.get(index).spGrade.toString()
+                                                            }
+                                                        }
+                                                    }
+
                                                 }
 
                                                 override fun onFailure(call: Call<List<SeasonId>>, t: Throwable) {
