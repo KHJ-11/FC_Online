@@ -188,734 +188,734 @@ class UserInfoText : Fragment() {
                                                                 .into(fieldSeason)
                                                         }
                                                     }
-                                                    filterPositionList?.get(index)?.takeIf { it == 2 }?.let {
-                                                        binding.field.position2.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "RWB"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 3 }?.let {
-                                                        binding.field.position3.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "RB"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 4 }?.let {
-                                                        binding.field.position4.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "RCB"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 5 }?.let {
-                                                        binding.field.position5.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "CB"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 6 }?.let {
-                                                        binding.field.position6.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "LCB"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 7 }?.let {
-                                                        binding.field.position7.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "LB"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 8 }?.let {
-                                                        binding.field.position8.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "LWB"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 9 }?.let {
-                                                        binding.field.position9.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "RDM"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 10 }?.let {
-                                                        binding.field.position10.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "CDM"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 11 }?.let {
-                                                        binding.field.position11.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "LDM"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 12 }?.let {
-                                                        binding.field.position12.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "RM"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 13 }?.let {
-                                                        binding.field.position13.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "RCM"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 14 }?.let {
-                                                        binding.field.position14.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "CM"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 15 }?.let {
-                                                        binding.field.position15.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "LCM"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 16 }?.let {
-                                                        binding.field.position16.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "LM"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 17 }?.let {
-                                                        binding.field.position17.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "RAM"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 18 }?.let {
-                                                        binding.field.position18.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "CAM"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 19 }?.let {
-                                                        binding.field.position19.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "LAM"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 20 }?.let {
-                                                        binding.field.position20.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "RF"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 21 }?.let {
-                                                        binding.field.position21.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "CF"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 22 }?.let {
-                                                        binding.field.position22.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "LF"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 23 }?.let {
-                                                        binding.field.position23.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "RW"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 24 }?.let {
-                                                        binding.field.position24.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "RS"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 25 }?.let {
-                                                        binding.field.position25.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "ST"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 26 }?.let {
-                                                        binding.field.position26.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "LS"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
-                                                    filterPositionList?.get(index)?.takeIf { it == 27 }?.let {
-                                                        binding.field.position27.apply {
-                                                            itemPlayerUi.visibility = View.VISIBLE
-                                                            fieldPosition.text = "LW"
-                                                            fieldName.text = filterNameList?.joinToString()
-                                                            fieldGrade.text = home.get(index).spGrade.toString()
-                                                            if (grade == 1) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
-                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
-                                                            } else if (grade <= 4) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
-                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
-                                                            } else if (grade <= 7) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
-                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
-                                                            } else if (grade <= 10) {
-                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
-                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
-                                                            }
-                                                            Glide.with(this@UserInfoText)
-                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
-                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
-                                                                .into(fieldPicture)
-                                                            Glide.with(this@UserInfoText)
-                                                                .load(season)
-                                                                .into(fieldSeason)
-                                                        }
-                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 2 }?.let {
+//                                                        binding.field.position2.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "RWB"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 3 }?.let {
+//                                                        binding.field.position3.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "RB"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 4 }?.let {
+//                                                        binding.field.position4.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "RCB"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 5 }?.let {
+//                                                        binding.field.position5.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "CB"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 6 }?.let {
+//                                                        binding.field.position6.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "LCB"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 7 }?.let {
+//                                                        binding.field.position7.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "LB"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 8 }?.let {
+//                                                        binding.field.position8.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "LWB"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 9 }?.let {
+//                                                        binding.field.position9.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "RDM"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 10 }?.let {
+//                                                        binding.field.position10.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "CDM"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 11 }?.let {
+//                                                        binding.field.position11.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "LDM"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 12 }?.let {
+//                                                        binding.field.position12.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "RM"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 13 }?.let {
+//                                                        binding.field.position13.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "RCM"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 14 }?.let {
+//                                                        binding.field.position14.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "CM"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 15 }?.let {
+//                                                        binding.field.position15.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "LCM"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 16 }?.let {
+//                                                        binding.field.position16.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "LM"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 17 }?.let {
+//                                                        binding.field.position17.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "RAM"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 18 }?.let {
+//                                                        binding.field.position18.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "CAM"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 19 }?.let {
+//                                                        binding.field.position19.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "LAM"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 20 }?.let {
+//                                                        binding.field.position20.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "RF"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 21 }?.let {
+//                                                        binding.field.position21.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "CF"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 22 }?.let {
+//                                                        binding.field.position22.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "LF"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 23 }?.let {
+//                                                        binding.field.position23.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "RW"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 24 }?.let {
+//                                                        binding.field.position24.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "RS"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 25 }?.let {
+//                                                        binding.field.position25.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "ST"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 26 }?.let {
+//                                                        binding.field.position26.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "LS"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
+//                                                    filterPositionList?.get(index)?.takeIf { it == 27 }?.let {
+//                                                        binding.field.position27.apply {
+//                                                            itemPlayerUi.visibility = View.VISIBLE
+//                                                            fieldPosition.text = "LW"
+//                                                            fieldName.text = filterNameList?.joinToString()
+//                                                            fieldGrade.text = home.get(index).spGrade.toString()
+//                                                            if (grade == 1) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_black)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
+//                                                            } else if (grade <= 4) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
+//                                                            } else if (grade <= 7) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_silver)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#5C6169"))
+//                                                            } else if (grade <= 10) {
+//                                                                fieldGrade.setBackgroundResource(R.drawable.back_gold)
+//                                                                fieldGrade.setTextColor(Color.parseColor("#6C5200"))
+//                                                            }
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/playersAction/p${spid}.png")
+//                                                                .error("https://fco.dn.nexoncdn.co.kr/live/externalAssets/common/players/p${id}.png")
+//                                                                .into(fieldPicture)
+//                                                            Glide.with(this@UserInfoText)
+//                                                                .load(season)
+//                                                                .into(fieldSeason)
+//                                                        }
+//                                                    }
 
 
                                                     fun setPlayerField(position: Int, positionText: String) {
@@ -933,6 +933,17 @@ class UserInfoText : Fragment() {
                                                                 fieldGrade.text = home.get(index).spGrade.toString()
                                                             }
                                                         }
+                                                    }
+                                                    filterPositionList?.get(index)?.takeIf { it in 0..2 }?.let {
+                                                        val positionText = when (it) {
+                                                            0 -> "GK"
+                                                            1 -> "CB"
+                                                            2 -> "RWB"
+                                                            // 여러 위치에 대한 케이스 추가 가능
+                                                            else -> ""
+                                                        }
+
+                                                        setPlayerField(it, positionText)
                                                     }
 
                                                 }
