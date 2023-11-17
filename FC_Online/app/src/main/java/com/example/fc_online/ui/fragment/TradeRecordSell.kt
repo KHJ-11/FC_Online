@@ -34,7 +34,7 @@ class TradeRecordSell : Fragment() {
     }
 
     private fun userSellTrade() {
-        val callGetTradeType = Constants.api.getTradeType("${Constants.KEY}","${sharedViewModel.sharedData}","sell",1,10)
+        val callGetTradeType = Constants.api.getTradeType("${Constants.KEY}","${sharedViewModel.sharedData}","sell",0,10)
 
         callGetTradeType.enqueue(object : Callback<List<TradeType>> {
             override fun onResponse(call: Call<List<TradeType>>, response: Response<List<TradeType>>) {
