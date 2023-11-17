@@ -43,7 +43,7 @@ class MatchPlay : Fragment() {
     private fun userPlayMatch() {
 //        val type = resources.getStringArray(R.array.matchPlayType)
 
-        val callGetPlayMatch = api.getPlayMatch("${KEY}","${sharedViewModel.sharedData}",52,1,10)
+        val callGetPlayMatch = api.getPlayMatch("${KEY}","${sharedViewModel.sharedData}",52,0,10)
 
         callGetPlayMatch.enqueue(object : Callback<JsonArray> {
             override fun onResponse(call: Call<JsonArray>, response: Response<JsonArray>) {
