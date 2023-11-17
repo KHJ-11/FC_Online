@@ -30,13 +30,13 @@ FC온라인으로 변경되면서 해당 Open Api가 변경됨으로 새롭게 �
 ![image](https://github.com/KHJ-11/FC_Online/assets/72050086/5a4be556-f7c6-4645-a378-f986ea7a6876)
 
 
-시작화면 : 감독명 입력
+시작화면 : 감독명 입력, 즐겨찾기된 감독명(클릭시 자동 입력)
 
 
 ![image](https://github.com/KHJ-11/FC_Online/assets/72050086/e95274f0-0161-4d0f-aa69-4d1e328cdff0)
 
 
-홈 화면 : 감독정보(닉네임, 레벨), 달성한 최고 등급정보, 최근에 사용한 팀 스쿼드 및 선수정보
+홈 화면 : 감독정보(닉네임, 레벨), 달성한 최고 등급정보, 최근에 사용한 팀 스쿼드 및 선수정보, 즐겨찾기(별모양)
 
 
 ![image](https://github.com/KHJ-11/FC_Online/assets/72050086/36af249b-d7fa-4f51-b720-1a3730a30b41)
