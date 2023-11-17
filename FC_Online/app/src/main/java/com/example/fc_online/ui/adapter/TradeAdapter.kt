@@ -20,6 +20,8 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.lang.StringBuilder
 import java.text.DecimalFormat
+import java.text.SimpleDateFormat
+import java.util.Locale
 import kotlin.math.log
 import kotlin.time.Duration.Companion.nanoseconds
 
@@ -32,6 +34,7 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
         val valueItem: TextView = rowRoot.findViewById(R.id.tradeValue)
         val spidPicture: ImageView = rowRoot.findViewById(R.id.tradePicture)
         val spidSeason: ImageView = rowRoot.findViewById(R.id.tradeSeason)
+        val tradeDate: TextView = rowRoot.findViewById(R.id.tradeDate)
 
         fun setData(item: TradeType) {
             gradeItem.text = item.grade.toString()
@@ -52,6 +55,16 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
             val koreanRepresentation = units.reversed().joinToString(" ")
 
             valueItem.text = koreanRepresentation
+
+            val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault())
+            val outputFormat = SimpleDateFormat("yyyy.MM.dd. a hh:mm:ss", Locale.getDefault())
+            try {
+                val date = inputFormat.parse(item.tradeDate)
+                val outputDateString = outputFormat.format(date)
+                tradeDate.text = outputDateString
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
 
 
             if (item.grade == 1) {

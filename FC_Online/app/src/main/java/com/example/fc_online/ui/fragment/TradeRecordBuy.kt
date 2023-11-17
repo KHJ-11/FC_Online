@@ -114,7 +114,7 @@ class TradeRecordBuy : Fragment() {
 //    }
 
     private fun userBuyTrade() {
-        val callGetTradeType = api.getTradeType("${KEY}","${sharedViewModel.sharedData}","buy",1,10)
+        val callGetTradeType = api.getTradeType("${KEY}","${sharedViewModel.sharedData}","buy",0,10)
 
         callGetTradeType.enqueue(object : Callback<List<TradeType>> {
             override fun onResponse(call: Call<List<TradeType>>, response: Response<List<TradeType>>) {
