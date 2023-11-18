@@ -202,19 +202,19 @@ class UserInfoText : Fragment() {
 
                                                                 when(grade) {
                                                                     1 -> {
-                                                                        fieldGrade.setBackgroundResource(R.drawable.back_black)
+                                                                        fieldGrade.setBackgroundResource(R.drawable.grade_black)
                                                                         fieldGrade.setTextColor(Color.parseColor("#C3C7C8"))
                                                                     }
                                                                     in 2..4 -> {
-                                                                        fieldGrade.setBackgroundResource(R.drawable.back_bronze)
+                                                                        fieldGrade.setBackgroundResource(R.drawable.grade_bronze)
                                                                         fieldGrade.setTextColor(Color.parseColor("#7F3F25"))
                                                                     }
                                                                     in 5..7 -> {
-                                                                        fieldGrade.setBackgroundResource(R.drawable.back_silver)
+                                                                        fieldGrade.setBackgroundResource(R.drawable.grade_silver)
                                                                         fieldGrade.setTextColor(Color.parseColor("#5C6169"))
                                                                     }
                                                                     in 8..10 -> {
-                                                                        fieldGrade.setBackgroundResource(R.drawable.back_gold)
+                                                                        fieldGrade.setBackgroundResource(R.drawable.grade_gold)
                                                                         fieldGrade.setTextColor(Color.parseColor("#6C5200"))
                                                                     }
                                                                 }

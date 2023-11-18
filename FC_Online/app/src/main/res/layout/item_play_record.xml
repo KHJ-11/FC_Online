@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/rounded_ui"
-    android:padding="10dp"
+    android:padding="7dp"
     android:id="@+id/item_play_record">
 
     <TextView
