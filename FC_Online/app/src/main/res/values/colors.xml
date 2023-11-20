@@ -27,4 +27,8 @@
     <color name="red">#E11515</color>
     <color name="textcolor">#4A4A4E</color>
     <color name="blackblack">#000000</color>
+
+    <color name="win">#82D8FF</color>
+    <color name="lose">#FF9696</color>
+    <color name="draw">#8A8A8A</color>
 </resources>

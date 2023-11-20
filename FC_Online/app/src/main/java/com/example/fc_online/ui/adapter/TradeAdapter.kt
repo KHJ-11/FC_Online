@@ -68,16 +68,16 @@ class TradeAdapter(private val tradeList:ArrayList<TradeType>)
 
 
             if (item.grade == 1) {
-                gradeItem.setBackgroundResource(R.drawable.back_black)
+                gradeItem.setBackgroundResource(R.drawable.grade_black)
                 gradeItem.setTextColor(Color.parseColor("#C3C7C8"))
             } else if (item.grade <= 4) {
-                gradeItem.setBackgroundResource(R.drawable.back_bronze)
+                gradeItem.setBackgroundResource(R.drawable.grade_bronze)
                 gradeItem.setTextColor(Color.parseColor("#7F3F25"))
             } else if (item.grade <= 7) {
-                gradeItem.setBackgroundResource(R.drawable.back_silver)
+                gradeItem.setBackgroundResource(R.drawable.grade_silver)
                 gradeItem.setTextColor(Color.parseColor("#5C6169"))
             } else if (item.grade <= 10) {
-                gradeItem.setBackgroundResource(R.drawable.back_gold)
+                gradeItem.setBackgroundResource(R.drawable.grade_gold)
                 gradeItem.setTextColor(Color.parseColor("#6C5200"))
             }
 
