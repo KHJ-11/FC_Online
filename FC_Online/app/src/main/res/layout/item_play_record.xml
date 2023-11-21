@@ -4,8 +4,9 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/rounded_ui"
-    android:padding="7dp"
-    android:id="@+id/item_play_record">
+    android:padding="5dp"
+    android:id="@+id/item_play_record"
+    android:layout_marginBottom="2dp">
 
     <TextView
         android:id="@+id/matchDate"

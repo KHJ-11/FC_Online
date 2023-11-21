@@ -85,10 +85,12 @@ class MatchPlay : Fragment() {
             override fun onResponse(call: Call<JsonArray>, response: Response<JsonArray>) {
                 val play = response.body()
 
-                if (play != null && play.toString().isNotEmpty()) {
-                    Log.e("들었음", play.toString())
+                if (play?.size() == 0) {
+                    binding.nonRecord.visibility = View.VISIBLE
+                    binding.rvMatchPlay.visibility = View.GONE
                 } else {
-                    Log.e("비었음", play.toString())
+                    binding.rvMatchPlay.visibility = View.VISIBLE
+                    binding.nonRecord.visibility = View.GONE
                 }
 
                 fun viewData(): ArrayList<PlayMatch> {
@@ -106,7 +108,6 @@ class MatchPlay : Fragment() {
                 val mPlayAdapter = PlayAdapter(viewData())
                 binding.rvMatchPlay.adapter = mPlayAdapter
                 binding.rvMatchPlay.layoutManager = LinearLayoutManager(context)
-                binding.rvMatchPlay.addItemDecoration(DividerItemDecoration(binding.rvMatchPlay.context, LinearLayoutManager(context).orientation))
 
             }
 
