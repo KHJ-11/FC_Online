@@ -1,5 +1,6 @@
 package com.example.fc_online.ui.fragment
 
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -36,6 +37,11 @@ class MatchPlay : Fragment() {
         val view = binding.root
 
         userPlayMatch()
+
+        binding.managerMatch.setTextColor(Color.parseColor("#82D8FF"))
+        managerMatchClick()
+        rankingMathchClick()
+        friendlyMatchClick()
 
         return view
     }
@@ -74,6 +80,36 @@ class MatchPlay : Fragment() {
             }
 
         })
+    }
+
+    private fun managerMatchClick() {
+        binding.managerMatch.apply {
+            setOnClickListener {
+                setTextColor(Color.parseColor("#82D8FF"))
+                binding.rankingMatch.setTextColor(Color.WHITE)
+                binding.friendlyMatch.setTextColor(Color.WHITE)
+            }
+        }
+    }
+
+    private fun rankingMathchClick() {
+        binding.rankingMatch.apply {
+            setOnClickListener {
+                setTextColor(Color.parseColor("#82D8FF"))
+                binding.managerMatch.setTextColor(Color.WHITE)
+                binding.friendlyMatch.setTextColor(Color.WHITE)
+            }
+        }
+    }
+
+    private fun friendlyMatchClick() {
+        binding.friendlyMatch.apply {
+            setOnClickListener {
+                setTextColor(Color.parseColor("#82D8FF"))
+                binding.managerMatch.setTextColor(Color.WHITE)
+                binding.rankingMatch.setTextColor(Color.WHITE)
+            }
+        }
     }
 
 }
