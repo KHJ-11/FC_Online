@@ -36,9 +36,8 @@ class MatchPlay : Fragment() {
         binding = FragmentMatchPlayBinding.inflate(layoutInflater)
         val view = binding.root
 
-        userPlayMatch()
+        binding.managerMatch.performClick()
 
-        binding.managerMatch.setTextColor(Color.parseColor("#82D8FF"))
         managerMatchClick()
         rankingMathchClick()
         friendlyMatchClick()
@@ -46,15 +45,51 @@ class MatchPlay : Fragment() {
         return view
     }
 
-    private fun userPlayMatch() {
-//        val type = resources.getStringArray(R.array.matchPlayType)
+    private fun managerMatchClick() {
+        binding.managerMatch.apply {
+            setOnClickListener {
+                setTextColor(Color.parseColor("#82D8FF"))
+                binding.rankingMatch.setTextColor(Color.WHITE)
+                binding.friendlyMatch.setTextColor(Color.WHITE)
+                userPlayMatch(52)
+            }
+        }
+    }
 
-        val callGetPlayMatch = api.getPlayMatch("${KEY}","${sharedViewModel.sharedData}",52,0,10)
+    private fun rankingMathchClick() {
+        binding.rankingMatch.apply {
+            setOnClickListener {
+                setTextColor(Color.parseColor("#82D8FF"))
+                binding.managerMatch.setTextColor(Color.WHITE)
+                binding.friendlyMatch.setTextColor(Color.WHITE)
+                userPlayMatch(50)
+            }
+        }
+    }
+
+    private fun friendlyMatchClick() {
+        binding.friendlyMatch.apply {
+            setOnClickListener {
+                setTextColor(Color.parseColor("#82D8FF"))
+                binding.managerMatch.setTextColor(Color.WHITE)
+                binding.rankingMatch.setTextColor(Color.WHITE)
+                userPlayMatch(60)
+            }
+        }
+    }
+
+    private fun userPlayMatch(matchNumber: Int) {
+        val callGetPlayMatch = api.getPlayMatch("${KEY}","${sharedViewModel.sharedData}",matchNumber,0,10)
 
         callGetPlayMatch.enqueue(object : Callback<JsonArray> {
             override fun onResponse(call: Call<JsonArray>, response: Response<JsonArray>) {
-//                val jsonArray: JsonArray? = response.body()
                 val play = response.body()
+
+                if (play != null && play.toString().isNotEmpty()) {
+                    Log.e("들었음", play.toString())
+                } else {
+                    Log.e("비었음", play.toString())
+                }
 
                 fun viewData(): ArrayList<PlayMatch> {
                     val list = arrayListOf<PlayMatch>()
@@ -82,34 +117,5 @@ class MatchPlay : Fragment() {
         })
     }
 
-    private fun managerMatchClick() {
-        binding.managerMatch.apply {
-            setOnClickListener {
-                setTextColor(Color.parseColor("#82D8FF"))
-                binding.rankingMatch.setTextColor(Color.WHITE)
-                binding.friendlyMatch.setTextColor(Color.WHITE)
-            }
-        }
-    }
-
-    private fun rankingMathchClick() {
-        binding.rankingMatch.apply {
-            setOnClickListener {
-                setTextColor(Color.parseColor("#82D8FF"))
-                binding.managerMatch.setTextColor(Color.WHITE)
-                binding.friendlyMatch.setTextColor(Color.WHITE)
-            }
-        }
-    }
-
-    private fun friendlyMatchClick() {
-        binding.friendlyMatch.apply {
-            setOnClickListener {
-                setTextColor(Color.parseColor("#82D8FF"))
-                binding.managerMatch.setTextColor(Color.WHITE)
-                binding.rankingMatch.setTextColor(Color.WHITE)
-            }
-        }
-    }
 
 }
