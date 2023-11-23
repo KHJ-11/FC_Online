@@ -25,6 +25,7 @@
             android:gravity="center"/>
 
         <TextView
+            android:id="@+id/win_lose_record"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="10승 0무 0패"
@@ -33,6 +34,7 @@
             android:gravity="center"/>
 
         <TextView
+            android:id="@+id/win_rate"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="승률"
@@ -50,11 +52,29 @@
 
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvMatchPlay"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMatchPlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/non_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="최근 전적기록이 없습니다."
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -63,6 +83,7 @@
         android:layout_margin="5dp">
 
         <TextView
+            android:id="@+id/managerMatch"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -71,9 +92,10 @@
             android:text="감독모드"
             android:layout_marginRight="5dp"
             android:padding="5dp"
-            android:background="@drawable/rounded_ui"/>
+            android:textSize="20sp"/>
 
         <TextView
+            android:id="@+id/rankingMatch"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -82,9 +104,10 @@
             android:text="공식경기"
             android:layout_marginRight="5dp"
             android:padding="5dp"
-            android:background="@drawable/rounded_ui"/>
+            android:textSize="20sp"/>
 
         <TextView
+            android:id="@+id/friendlyMatch"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -92,7 +115,7 @@
             android:textColor="@color/white"
             android:text="친선모드"
             android:padding="5dp"
-            android:background="@drawable/rounded_ui"/>
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
