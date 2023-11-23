@@ -71,6 +71,8 @@ class PlayAdapter(private val playList: ArrayList<PlayMatch>)
                "패" -> itemPlayRecord.setBackgroundResource(R.drawable.rounded_lose)
            }
 
+           Log.e("azxczcx", value.matchInfo.get(0).matchDetail.matchResult)
+
        }
 
     }

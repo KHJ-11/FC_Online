@@ -36,7 +36,8 @@ class MatchPlay : Fragment() {
         binding = FragmentMatchPlayBinding.inflate(layoutInflater)
         val view = binding.root
 
-        binding.managerMatch.performClick()
+        userPlayMatch(52)
+        binding.managerMatch.setTextColor(Color.parseColor("#82D8FF"))
 
         managerMatchClick()
         rankingMathchClick()
