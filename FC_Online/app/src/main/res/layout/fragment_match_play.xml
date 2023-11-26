@@ -28,7 +28,7 @@
             android:id="@+id/win_lose_record"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="10승 0무 0패"
+            android:text="7승 1무 2패"
             android:textColor="@color/white"
             android:layout_weight="1"
             android:gravity="center"/>
@@ -45,7 +45,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="100%"
+            android:text="70%"
             android:textColor="@color/white"
             android:layout_weight="1"
             android:gravity="center"/>
