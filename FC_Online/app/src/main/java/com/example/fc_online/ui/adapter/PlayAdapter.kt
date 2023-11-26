@@ -1,5 +1,6 @@
 package com.example.fc_online.ui.adapter
 
+import android.graphics.LinearGradient
 import android.text.Layout
 import android.util.Log
 import android.view.LayoutInflater
@@ -71,7 +72,7 @@ class PlayAdapter(private val playList: ArrayList<PlayMatch>)
                "패" -> itemPlayRecord.setBackgroundResource(R.drawable.rounded_lose)
            }
 
-           Log.e("azxczcx", value.matchInfo.get(0).matchDetail.matchResult)
+           val test = value.matchInfo.get(0).matchDetail.matchResult
 
        }
 
